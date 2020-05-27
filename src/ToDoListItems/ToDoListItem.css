@@ -1,0 +1,9 @@
+.ListItem {
+  border: 1px solid #bdb6c7;
+  text-align: left;
+  padding: 10px;
+}
+.edit-remove-buttons {
+  position: relative;
+  float: right;
+}

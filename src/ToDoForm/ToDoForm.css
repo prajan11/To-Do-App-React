@@ -1,0 +1,12 @@
+.ToDoInputForm {
+  margin: auto;
+  border: 1px solid #775da0;
+  width: 50%;
+  padding: 30px;
+  box-shadow: 0 5px 5px #775da0;
+}
+
+#basic-addon1 {
+  background: #775da0;
+  color: white;
+}
