@@ -13,6 +13,7 @@ const toDoList = (props) => {
               item_name={ind_list_item.item}
               id={index}
               key={index}
+              editItem={props.editItemIndex === index ? true : false}
               deleteListItem={() => props.deleteListItem(index)}
               editListItem={() => props.editListItem(index)}
             />

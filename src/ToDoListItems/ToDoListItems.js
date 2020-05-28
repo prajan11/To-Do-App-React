@@ -3,7 +3,7 @@ import "./ToDoListItem.css";
 
 const toDoListItem = (props) => {
   return (
-    <div>
+    <div className={props.editItem ? "editBackground" : ""}>
       <div className="ListItem">
         {props.item_name}
         <div className="edit-remove-buttons">

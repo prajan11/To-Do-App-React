@@ -11,7 +11,7 @@ class App extends Component {
     id: 0,
     ind_item: "",
     edit_item: false,
-    edit_item_index: 0,
+    edit_item_index: null,
   };
 
   toDoItemChanged = (event) => {
@@ -54,14 +54,12 @@ class App extends Component {
   editListItem = (id) => {
     const copyOfToDoList = [...this.state.todoItem];
     const itemToEdit = copyOfToDoList.splice(id, 1)[0].item;
-    // console.log(itemToEdit);
-    // console.log(this.state.todoItem);
+
     this.setState({
       ind_item: itemToEdit,
       edit_item: true,
       edit_item_index: id,
     });
-    // console.log(this.state.edit_item);
   };
 
   editItemFromList = () => {
@@ -97,6 +95,7 @@ class App extends Component {
         <br />
         <ToDoList
           itemList={this.state.todoItem}
+          editItemIndex={this.state.edit_item_index}
           clearList={this.clearToDoList}
           deleteListItem={this.deleteListItem}
           editListItem={this.editListItem}
