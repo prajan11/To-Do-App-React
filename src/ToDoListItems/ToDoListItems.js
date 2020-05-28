@@ -1,21 +1,21 @@
 import React from "react";
 import "./ToDoListItem.css";
 
-const toDoListItem = () => {
+const toDoListItem = (props) => {
   return (
     <div>
       <div className="ListItem">
-        List Item 1
+        {props.item_name}
         <div className="edit-remove-buttons">
           <button type="button" className="btn btn-sm btn-success" title="Edit">
-            <i class="fas fa-edit"></i>
+            <i className="fas fa-edit"></i>
           </button>
           <button
             type="button"
             className="btn btn-sm btn-danger ml-1"
             title="Delete"
           >
-            <i class="fas fa-trash-alt"></i>
+            <i className="fas fa-trash-alt"></i>
           </button>
         </div>
       </div>
