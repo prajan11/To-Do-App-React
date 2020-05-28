@@ -22,13 +22,23 @@ const toDoForm = (props) => {
           />
         </div>
         <div className="mt-4">
-          <button
-            type="button"
-            className="form-control btn btn-primary"
-            onClick={props.addItemClick}
-          >
-            <i className="fas fa-plus"></i> Add Item
-          </button>
+          {props.editItem ? (
+            <button
+              type="button"
+              className="form-control btn btn-success"
+              onClick={props.editItemClick}
+            >
+              <i className="fas fa-plus"></i> Edit Item
+            </button>
+          ) : (
+            <button
+              type="button"
+              className="form-control btn btn-primary"
+              onClick={props.addItemClick}
+            >
+              <i className="fas fa-plus"></i> Add Item
+            </button>
+          )}
         </div>
       </div>
     </div>

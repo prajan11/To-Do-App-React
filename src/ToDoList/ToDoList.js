@@ -14,6 +14,7 @@ const toDoList = (props) => {
               id={index}
               key={index}
               deleteListItem={() => props.deleteListItem(index)}
+              editListItem={() => props.editListItem(index)}
             />
           );
         })}
