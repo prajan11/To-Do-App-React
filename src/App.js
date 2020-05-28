@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import ToDoForm from "./ToDoForm/ToDoForm.js";
 import ToDoList from "./ToDoList/ToDoList.js";
