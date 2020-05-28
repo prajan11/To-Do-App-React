@@ -20,7 +20,7 @@ class App extends Component {
   };
 
   addItemToList = () => {
-    if (this.state.ind_item !== "") {
+    if (this.state.ind_item.trim() !== "") {
       const inputtedToDoItem = {
         id: this.state.id,
         item: this.state.ind_item,

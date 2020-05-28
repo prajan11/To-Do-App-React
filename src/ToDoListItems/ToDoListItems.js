@@ -15,14 +15,18 @@ const toDoListItem = (props) => {
           >
             <i className="fas fa-edit"></i>
           </button>
-          <button
-            type="button"
-            className="btn btn-sm btn-danger ml-1"
-            title="Delete"
-            onClick={props.deleteListItem}
-          >
-            <i className="fas fa-trash-alt"></i>
-          </button>
+          {props.editItem ? (
+            ""
+          ) : (
+            <button
+              type="button"
+              className="btn btn-sm btn-danger ml-1"
+              title="Delete"
+              onClick={props.deleteListItem}
+            >
+              <i className="fas fa-trash-alt"></i>
+            </button>
+          )}
         </div>
       </div>
     </div>
