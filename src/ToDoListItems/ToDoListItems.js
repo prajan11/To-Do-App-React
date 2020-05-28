@@ -14,6 +14,7 @@ const toDoListItem = (props) => {
             type="button"
             className="btn btn-sm btn-danger ml-1"
             title="Delete"
+            onClick={props.deleteListItem}
           >
             <i className="fas fa-trash-alt"></i>
           </button>

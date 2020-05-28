@@ -13,6 +13,7 @@ const toDoList = (props) => {
               item_name={ind_list_item.item}
               id={index}
               key={index}
+              deleteListItem={() => props.deleteListItem(index)}
             />
           );
         })}

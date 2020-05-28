@@ -41,6 +41,16 @@ class App extends Component {
     });
   };
 
+  deleteListItem = (id) => {
+    console.log(id);
+    const newToDoList = this.state.todoItem.filter((ind_item, index) => {
+      return index !== id;
+    });
+    this.setState({
+      todoItem: newToDoList,
+    });
+  };
+
   render() {
     return (
       <div className="App">
@@ -55,6 +65,7 @@ class App extends Component {
         <ToDoList
           itemList={this.state.todoItem}
           clearList={this.clearToDoList}
+          deleteListItem={this.deleteListItem}
         />
       </div>
     );
